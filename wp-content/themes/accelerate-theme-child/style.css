@@ -1,8 +1,9 @@
+
 /*
 Theme Name:   Accelerate Theme Child
 Theme URI:    http://example.com/accelerate-theme-child/
 Description:  Accelerate Child Theme - Accelerate
-Author:   	Your Name!
+Author:   	Casey Buscall
 Author URI:   http://example.com
 Template: 	accelerate-theme
 Version:      2.0.0
@@ -10,39 +11,322 @@ Tags:     	light, dark, two-columns, right-sidebar, responsive-layout, accessibi
 Text Domain:  accelerate-theme-child
 */
 
+/* HOMEPAGE STYLES */
 .home-page {
-    background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
-    text-align: center;
-  }
+  background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
+}
 
-  #masthead {
-    background: none repeat scroll 0 0 #45ac9d;
-  }
+#masthead {
+background: none repeat scroll 0 0 #45ac9d;
+}
 
-  .button {
-      background: none repeat scroll 0 0 #45ac9d;
-  }
+#masthead nav ul li {
+float: left;
+}
 
-  .blog-post {
-	width: 50%;
-	float: left;
-	margin-bottom: 2em;
+.button {
+background: none repeat scroll 0 0 #45ac9d;
+}
+
+#masthead nav ul li{
+float: left;
+}
+
+/* HOMEPAGE FEATURED CASE STUDIES STYLES */
+.homepage-featured-work {
+text-align: center;
+float: left;
+clear: both;
+list-style: none;
+}
+
+.individual-featured-work {
+display: inline;
+float: left;
+clear: right;
+list-style: none;
+}
+
+.individual-featured-work figure {
+margin-top: 1em;
+padding-right: 15px;
+width: 100%;
+}
+
+.individual-featured-work h4 {
+font-family: 'Open Sans', Arial, sans-serif;
+font-weight: 350;
+font-size: .9em;
+text-decoration: none;
+margin-bottom: 3em;
+}
+
+.individual-featured-work h4 {
+text-align: center;
+}
+
+/* HOMEPAGE TWITTER FEED */
+section.blog-twitter {
+width: 30%
+margin: 100px;
+display: flex;
+}
+
+.recent-posts {
+margin-left: 16%;
+}
+
+.twitter-feed {
+margin-left: -25%;
+margin-right: 15%
+}
+
+#secondary.widget-area {
+padding-left: 20px;
+}
+
+.widget-title {
+font: 700 1em/1.75 'Montserrat';
+color: #a6a6a6;
+text-transform: uppercase;
+margin: 2em 0 2em;
+}
+
+/* CASE STUDIES PAGE STYLES */
+aside.case-study-sidebar {
+float: left;
+width: 315px;
+margin: 0 20px 0 0;
+}
+
+aside.case-study-sidebar h2 {
+font-family: 'Open Sans', Arial, sans-serif;
+font-weight: bold;
+line-height: .5em;
+}
+
+aside.case-study-sidebar h4 {
+font-family: 'Open Sans', Arial, sans-serif;
+font-weight: 400;
+font-size: 1em;
+line-height: 1.5em;
+}
+
+aside.case-study-sidebar h4 span {
+color: #a6a6a6;
+}
+
+div.case-study-images img {
+display: block;
+margin-bottom: 50px;
+border: 1px solid #dddddd;
+width: 100%;
+height: auto;
+}
+
+div.case-study-images {
+float: left;
+width: 615px;
+}
+
+/* BLOG POST STYLES */
+.blog-post {
+width: 40%;
+float: left;
+margin-bottom: 2em;
 }
 
 .blog-post h4 {
-    font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
-    color: #a6a6a6;
-    text-transform: uppercase;
-    margin: 2em 0 .5em;
+font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+color: #a6a6a6;
+text-transform: uppercase;
+margin: 2em 0 .5em;
 }
 
 .blog-post h3 {
-	font-size: 1.5em;
+font-size: 1.5em;
 }
 
 .read-more-link {
-	font-family: 'Montserrat';
-	font-weight: 700;
-	color: #45ac9d;
-	text-transform: uppercase;
+font-family: 'Montserrat';
+font-weight: 700;
+color: #45ac9d;
+text-transform: uppercase;
 }
+
+.social-media-menu li {
+margin-right: 10px;
+display: inline-block;
+text-decoration: none;
+font-size: 1.5em;
+background: black;
+border-radius: 50%;
+}
+.social-media-menu li a {
+color: white;
+padding: 0 5px 0 5px;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+.individual-featured-work {
+  width: 33%;
+}
+}
+
+@media (min-width: 768px) {
+  .blog-post {
+    width: 50%;
+    float: left;
+    margin-bottom: 2em;
+}
+}
+
+/* CASE STUDIES STYLES */
+article.case-study {
+margin: -25px 0 0;
+}
+
+aside.case-study-sidebar {
+float: left;
+width: 310px;
+margin: 0 44px 0 0;
+}
+div.case-study-images {
+float: left;
+width: 606px;
+}
+div.case-study-images img {
+margin: 50px -20px -20px -20px;
+border: 1px solid #dddddd;
+}
+
+/* CONTACT FORM*/
+.narrow-up {
+width: 80%;
+}
+.form-custom-wrap{
+width: 80%;
+margin: 0 auto;
+margin-top: 60px;
+}
+#nf-label-field-1, #nf-label-field-2, #nf-label-field-3 {
+font-weight: 600;
+}
+.nf-form-content textarea.ninja-forms-field {
+background-color: #fff;
+}
+#nf-field-1, #nf-field-2{
+background-color: #fff;
+}
+#nf-field-4 {
+width: 30%;
+float: right;
+background-color: #45ac9d;
+}
+
+/* ABOUT PAGE */
+.about-adjust {
+margin-bottom: 0;
+}
+
+.about-header-text {
+color: white;
+text-align: center;
+line-height: 2;
+width: 40%;
+font-weight: 600;
+margin: 0 auto;
+}
+
+.center-text {
+text-align: center;
+}
+
+.center-text h2 {
+text-transform: uppercase;
+margin-top: 0;
+}
+
+.flex-wrapper {
+display: flex;
+}
+
+.service-loop-wrap {
+margin-top: 60px;
+display: flex;
+flex-direction: row;
+align-items: center;
+}
+
+.flex-wrapper:nth-child(even) .service-loop-wrap {
+display: flex;
+flex-direction: row-reverse;
+}
+
+.service-img {
+width: 30%;
+display: flex;
+justify-content: flex-end;
+}
+
+.flex-wrapper:nth-child(even) .service-img {
+display: flex;
+justify-content: flex-start;
+}
+
+.service-text {
+width: 70%;
+display: flex;
+flex-direction: column;
+}
+
+.work-with-us {
+border-top: 1px solid #bfbfbf;
+margin-top: 50px;
+padding: 30px 150px 0 150px;
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+
+.work-with-us h2 {
+margin: 0;
+}
+
+.service-text h2 {
+margin-top: 0;
+}
+
+.clearfix-about {
+clear: both;
+}
+
+/* 404 page */
+.lost-hero-content {
+  background: url("img/cristiano-pinto-kA4Nwhp766A-unsplash.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
+  height: auto;
+  margin: 0 0 5em;
+  padding: 20em 0;
+}
+.lost-header {
+	color: #fff;
+	font-weight:bold;
+	font-size: 2em;
+	line-height: 1.5;
+	margin: 0 2%;
+  margin-bottom: 2em;
+}
+.lost-page a {
+  margin-left: 1.6em;
+}
+.photo-credit {
+  max-width: 76%;
+  margin: 0 auto;
+}
+.photo-credit h4 {
+  font-family: 'Londrina Solid', 'Montserrat', 'Open Sans', Arial, sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+/* End 404 page */

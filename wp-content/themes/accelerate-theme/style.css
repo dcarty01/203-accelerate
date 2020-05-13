@@ -626,6 +626,58 @@ a.button, a.button:link {
     font-size: .9em;
     line-height: 1.5;
 }
+
+/* Text meant only for screen readers. */
+/*.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+/*}*/
+/* End Footer */
+
+/* Contact Us Page */
+
+.nf-form-fields-required {
+  display: none;
+}
+
+#nf-label-field-1 {
+    font-weight: 100;
+}
+
+#nf-label-field-2 {
+    font-weight: 100;
+}
+
+  #nf-label-field-3 {
+    font-weight: 100;
+}
+
+.ninja-forms-req-symbol {
+  display: none;
+}
+
+#nf-field-4 {
+  background: #45ac9d;
+  float: right;
+  width: 25%;
+}
+
+.contact-us .main-content {
+  margin: auto;
+  width: 70%;
+  flex-grow: inherit;
+}
+
+/* End Contact Page */
+© 2020 GitHub, Inc.
 /* End FOOTER STYLES */
 
 /* Media Queries */

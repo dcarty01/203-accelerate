@@ -27,9 +27,8 @@ Accelerate is a strategy and marketing agency located in the heart of NYC. Our g
 	<?php 			query_posts('post_type=services'); ?>
 
 			<?php while ( have_posts() ) : the_post();
-				$service = get_field('service');
 				$service_description = get_field('service_description');
-				$image_1 = get_field('image_1');
+				$service_image = get_field('service_image');
 				$size = "medium";
 				?>
 				<div class="flex-wrapper">
@@ -42,14 +41,15 @@ Accelerate is a strategy and marketing agency located in the heart of NYC. Our g
 
 
 						<div class="service-img">
-							<img src=<?php if($image_1) {
-								echo wp_get_attachment_image($image_1,$size); } ?>
+							<?php if($service_image) {
+								echo wp_get_attachment_image($service_image, $size); } ?>
 						</div>
 						<div class="clearfix-about"></div>
 					</div>
 				</div>
 
 		<?php endwhile; // end of the loop. ?>
+		<?php wp_reset_query(); // resets the altered query back to the original ?>
 
 		<div class="work-with-us">
 			<h2>Interested in working with us?</h2>

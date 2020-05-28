@@ -46,9 +46,6 @@
   </div>
 </section>
 
-
-<section class="blog-twitter">
-  <!-- RECENT BLOG POST -->
   <section class="recent-posts">
    		<div class="site-content">
    			<div class="blog-post">
@@ -61,19 +58,20 @@
    					<?php endwhile; // end of the loop. ?>
    				<?php wp_reset_query(); // resets the altered query back to the original ?>
    			</div>
-   		</div>
+
+          <section class="twitter-feed">
+            <h3><Recent Tweet</h3>
+             <?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
+                <div id="secondary" class="widget-area" role="complementary">
+             	    <?php dynamic_sidebar( 'sidebar-2' ); ?>
+                </div>
+             <?php endif; ?>
+         	</div>
+      </div>
  	</section>
 
- 	<!-- SIDEBAR -->
-    <section class="twitter-feed">
-       <?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
-          <div id="secondary" class="widget-area" role="complementary">
-       	    <?php dynamic_sidebar( 'sidebar-2' ); ?>
-          </div>
-       <?php endif; ?>
-    </section>
-   	</div>
 
-</div>
+
+
 
  <?php get_footer(); ?>

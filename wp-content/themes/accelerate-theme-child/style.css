@@ -93,8 +93,10 @@ display: flex;
 	text-transform: uppercase;
 }
 .twitter-feed {
-  width: 50%;
+  width: 45%;
   float: left;
+  margin-bottom: 2em;
+  display: inline-block;
 }
 
 .twitter-widget {
